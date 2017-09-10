@@ -55,7 +55,7 @@ struct snd_msm {
 #define msm_trace_printk(...)
 #endif
 
-#define ATRACE_END()                            \
+#define ATRACE_END() \
 	msm_trace_printk("tracing_mark_write: E\n")
 #define ATRACE_BEGIN(name) \
 	msm_trace_printk("tracing_mark_write: B|%d|%s\n", current->tgid, name)
