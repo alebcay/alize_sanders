@@ -11,6 +11,8 @@ else
 ccflags-y	+= -Idrivers/input/misc/vl53L0/inc -DSTM_TEST
 endif
 
+ccflags-y	+= -Idrivers/input/misc/vl53L0
+
 ccflags-$(CONFIG_MSMB_CAMERA) += -Idrivers/media/platform/msm/camera_v2/sensor/io
 ccflags-$(CONFIG_MSMB_CAMERA) += -Idrivers/media/platform/msm/camera_v2
 ccflags-$(CONFIG_MSMB_CAMERA) += -Idrivers/media/platform/msm/camera_v2/sensor/cci
