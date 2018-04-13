@@ -419,7 +419,8 @@ KBUILD_AFLAGS   := -D__ASSEMBLY__
 KBUILD_CFLAGS   := -Werror -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-strict-aliasing -fno-common \
 		   -Werror-implicit-function-declaration \
-		   -Wno-format-security -mtune=cortex-a53\
+		   -Wno-format-security -mtune=cortex-a53 \
+		   -g0 -DNDEBUG -O3 \
 		   -std=gnu89 $(CLANG_FLAGS)
 
 KBUILD_CPPFLAGS	:= -D__KERNEL__ $(CLANG_FLAGS)
